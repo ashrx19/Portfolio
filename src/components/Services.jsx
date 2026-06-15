@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { FiArrowRight, FiBriefcase, FiGrid, FiLayers, FiMonitor, FiShoppingBag } from "react-icons/fi";
+import { FiArrowRight, FiCalendar, FiCoffee, FiHome, FiShoppingCart, FiTruck } from "react-icons/fi";
 import { services } from "../data/portfolio";
 
-const icons = [FiBriefcase, FiMonitor, FiShoppingBag, FiGrid, FiLayers];
+const icons = [FiHome, FiShoppingCart, FiCalendar, FiCoffee, FiTruck];
 
 function useRotatingText(words) {
   const [index, setIndex] = useState(0);
@@ -51,12 +51,12 @@ export default function Services() {
     <section className="section section-shell" id="services">
       <div className="services-showcase glass-card">
         <div className="section-heading services-heading">
-          <span className="eyebrow">Services</span>
+          <span className="eyebrow">Client Solutions</span>
           <h2>
             Let&apos;s build <span className="rotating-service">{typedService}</span>
           </h2>
           <p>
-            I build practical web experiences for clients who need clean design, responsive screens, backend logic, and deployment-ready delivery.
+            I build practical business systems with clean interfaces, responsive screens, backend logic, dashboards, and deployment-ready delivery.
           </p>
         </div>
 
@@ -108,6 +108,11 @@ export default function Services() {
         <span>Selected service</span>
         <strong>{activeService.title}</strong>
         <p>{activeService.outcome}</p>
+        <div className="solution-list" aria-label={`${activeService.title} examples`}>
+          {activeService.solutions.map((solution) => (
+            <span key={solution}>{solution}</span>
+          ))}
+        </div>
       </motion.div>
     </section>
   );
