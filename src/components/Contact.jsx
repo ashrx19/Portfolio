@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FiMail, FiMapPin, FiSend } from "react-icons/fi";
+import { FiMail, FiMapPin, FiPhone, FiSend } from "react-icons/fi";
 import { profile } from "../data/portfolio";
 
 export default function Contact() {
@@ -22,6 +22,10 @@ export default function Contact() {
           <a href={`mailto:${profile.email}`}>
             <FiMail />
             <span>{profile.email}</span>
+          </a>
+          <a href={`tel:+91${profile.phone}`}>
+            <FiPhone />
+            <span>+91 {profile.phone}</span>
           </a>
           <a href={profile.linkedin} target="_blank" rel="noreferrer">
             <FaLinkedin />

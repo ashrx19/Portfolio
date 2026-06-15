@@ -26,6 +26,7 @@ export const profile = {
   tagline: "Learn • Build • Improve • Repeat",
   location: "Coimbatore, Tamil Nadu, India",
   email: "ashwin191205@gmail.com",
+  phone: "9677866349",
   github: "https://github.com/ashrx19",
   linkedin: "https://linkedin.com/in/ashwin-s-999474282",
 };
