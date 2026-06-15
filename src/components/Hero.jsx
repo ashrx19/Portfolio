@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FiArrowDown, FiDownload, FiMail, FiMapPin } from "react-icons/fi";
+import { FiArrowDown, FiMail, FiMapPin } from "react-icons/fi";
 import { profile } from "../data/portfolio";
 
 export default function Hero() {
@@ -37,7 +37,6 @@ export default function Hero() {
             <a className="button button-ghost" href={profile.linkedin} target="_blank" rel="noreferrer">
               <FaLinkedin /> LinkedIn
             </a>
-            
           </div>
         </motion.div>
 
