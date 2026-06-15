@@ -56,7 +56,7 @@ export default function Hero() {
               <code>{`const developer = {
   name: "Ashwin S",
   stack: "MERN",
-  focus: ["React", "Backend", "APIs", "Problem Solving"],
+  focus: ["React", "Backend", "APIs", "Prompt"],
   loop: "Learn • Build • Improve • Repeat"
 };`}</code>
             </pre>
