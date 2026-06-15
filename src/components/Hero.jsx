@@ -37,9 +37,7 @@ export default function Hero() {
             <a className="button button-ghost" href={profile.linkedin} target="_blank" rel="noreferrer">
               <FaLinkedin /> LinkedIn
             </a>
-            <a className="button button-muted" href="/resume.pdf" aria-label="Download resume placeholder">
-              <FiDownload /> Resume
-            </a>
+            
           </div>
         </motion.div>
 
@@ -66,7 +64,11 @@ export default function Hero() {
           </div>
           <div className="availability">
             <span className="status-dot" />
-            Open to internships, junior roles, and collaborative builds
+            Available for internships, junior roles, and meaningful product collaborations
+          </div>
+          <div className="availability client-availability">
+            <span className="status-dot" />
+            Helping clients turn ideas into polished websites, dashboards, and full-stack apps
           </div>
           <a className="email-card" href={`mailto:${profile.email}`}>
             <FiMail />

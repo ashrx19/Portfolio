@@ -30,7 +30,7 @@ export const profile = {
   linkedin: "https://linkedin.com/in/ashwin-s-999474282",
 };
 
-export const navLinks = ["Home", "About", "Skills", "Projects", "Contact"];
+export const navLinks = ["Home", "About", "Skills", "Services", "Projects", "Contact"];
 
 export const stats = [
   { value: "4+", label: "Featured Projects" },
@@ -134,4 +134,32 @@ export const socialLinks = [
   { label: "GitHub", href: profile.github, icon: FaGithub },
   { label: "LinkedIn", href: profile.linkedin, icon: FaLinkedin },
   { label: "Email", href: `mailto:${profile.email}`, icon: FiMail },
+];
+
+export const services = [
+  {
+    title: "Business Websites",
+    summary: "Fast, responsive websites for local brands, services, and small businesses.",
+    outcome: "A polished web presence with clear sections, contact flow, and mobile-first design.",
+  },
+  {
+    title: "Portfolio Websites",
+    summary: "Personal portfolio sites for students, creators, developers, and professionals.",
+    outcome: "A clean profile that presents skills, projects, links, and credibility in one place.",
+  },
+  {
+    title: "E-Commerce Platforms",
+    summary: "Product listing, cart, authentication, search, filtering, and order-ready interfaces.",
+    outcome: "A practical shopping experience built with scalable MERN stack foundations.",
+  },
+  {
+    title: "Admin Dashboards",
+    summary: "Structured dashboards for managing records, reports, users, and daily operations.",
+    outcome: "A focused internal tool that makes data easier to view, update, and act on.",
+  },
+  {
+    title: "MERN Stack Web Apps",
+    summary: "Full-stack applications with React UI, Express APIs, MongoDB, and deployment support.",
+    outcome: "A working product flow from frontend screens to backend logic and database storage.",
+  },
 ];
