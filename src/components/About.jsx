@@ -31,7 +31,7 @@ export default function About() {
         <div className="stats-grid">
           {stats.map((stat, index) => (
             <motion.div
-              className="stat-card glass-card"
+              className={`stat-card glass-card ${stat.value.length > 3 ? "stat-card-word" : ""}`}
               key={stat.label}
               initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
