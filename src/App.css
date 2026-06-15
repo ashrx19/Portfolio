@@ -31,6 +31,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 124px;
   overflow-x: hidden;
 }
 
@@ -92,7 +93,7 @@ textarea {
 
 .section {
   padding: 98px 0 16px;
-  scroll-margin-top: 96px;
+  scroll-margin-top: 124px;
 }
 
 .glass-card {
@@ -550,6 +551,7 @@ pre {
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 14px;
   margin-top: 18px;
+  align-items: stretch;
 }
 
 .service-card {
@@ -561,11 +563,10 @@ pre {
   border-color: var(--border);
   color: inherit;
   text-align: left;
-  cursor: pointer;
   transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
-.service-card-active {
+.service-card:hover {
   border-color: rgba(56, 232, 198, 0.52);
   background: linear-gradient(145deg, rgba(56, 232, 198, 0.14), rgba(255, 255, 255, 0.045));
   box-shadow: 0 22px 62px rgba(56, 232, 198, 0.11);
@@ -590,53 +591,6 @@ pre {
 .service-card span:last-child {
   color: var(--muted);
   font-size: 0.92rem;
-}
-
-.service-detail {
-  display: grid;
-  grid-template-columns: minmax(150px, 0.32fr) minmax(0, 1fr);
-  gap: 16px;
-  align-items: start;
-  margin-top: 18px;
-  padding: 20px 22px;
-}
-
-.service-detail > span {
-  color: var(--teal);
-  font-size: 0.82rem;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.service-detail strong {
-  font-size: 1.08rem;
-}
-
-.service-detail p {
-  margin: 0;
-  color: var(--muted);
-}
-
-.service-detail p,
-.solution-list {
-  grid-column: 2;
-}
-
-.solution-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.solution-list span {
-  padding: 8px 10px;
-  border: 1px solid rgba(148, 163, 184, 0.16);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.055);
-  color: #d9e7f5;
-  font-size: 0.82rem;
-  font-weight: 700;
-  overflow-wrap: anywhere;
 }
 
 .project-grid {
@@ -881,15 +835,9 @@ pre {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .services-showcase,
-  .service-detail {
+  .services-showcase {
     grid-template-columns: 1fr;
     align-items: start;
-  }
-
-  .service-detail p,
-  .solution-list {
-    grid-column: 1;
   }
 
   .stats-grid {
@@ -984,9 +932,12 @@ pre {
     text-align: center;
   }
 
-  .service-detail p,
-  .solution-list {
-    grid-column: 1;
+  html {
+    scroll-padding-top: 104px;
+  }
+
+  .section {
+    scroll-margin-top: 104px;
   }
 }
 

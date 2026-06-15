@@ -43,9 +43,7 @@ function useRotatingText(words) {
 }
 
 export default function Services() {
-  const [activeIndex, setActiveIndex] = useState(0);
   const typedService = useRotatingText(services.map((service) => service.title));
-  const activeService = services[activeIndex];
 
   return (
     <section className="section section-shell" id="services">
@@ -73,15 +71,11 @@ export default function Services() {
       <div className="services-grid">
         {services.map((service, index) => {
           const Icon = icons[index];
-          const isActive = activeIndex === index;
 
           return (
-            <motion.button
-              className={`service-card glass-card ${isActive ? "service-card-active" : ""}`}
+            <motion.article
+              className="service-card glass-card"
               key={service.title}
-              type="button"
-              onClick={() => setActiveIndex(index)}
-              onMouseEnter={() => setActiveIndex(index)}
               initial={{ opacity: 0, y: 22 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
@@ -93,27 +87,10 @@ export default function Services() {
               </span>
               <strong>{service.title}</strong>
               <span>{service.summary}</span>
-            </motion.button>
+            </motion.article>
           );
         })}
       </div>
-
-      <motion.div
-        className="service-detail glass-card"
-        key={activeService.title}
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.28 }}
-      >
-        <span>Selected service</span>
-        <strong>{activeService.title}</strong>
-        <p>{activeService.outcome}</p>
-        <div className="solution-list" aria-label={`${activeService.title} examples`}>
-          {activeService.solutions.map((solution) => (
-            <span key={solution}>{solution}</span>
-          ))}
-        </div>
-      </motion.div>
     </section>
   );
 }
