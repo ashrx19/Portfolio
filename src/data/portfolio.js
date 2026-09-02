@@ -1,4 +1,5 @@
 import {
+  FaBolt,
   FaBootstrap,
   FaCss3Alt,
   FaFigma,
@@ -13,8 +14,11 @@ import { FiMail } from "react-icons/fi";
 import {
   SiExpress,
   SiJavascript,
+  SiJsonwebtokens,
   SiMongodb,
   SiMysql,
+  SiOpenid,
+  SiPassport,
   SiPostman,
   SiTailwindcss,
 } from "react-icons/si";
@@ -71,6 +75,9 @@ export const skillGroups = [
     skills: [
       { name: "Node.js", icon: FaNodeJs },
       { name: "Express.js", icon: SiExpress },
+      { name: "JWT", icon: SiJsonwebtokens },
+      { name: "OAuth", icon: SiOpenid },
+      { name: "Passport.js", icon: SiPassport },
     ],
   },
   {
@@ -88,6 +95,7 @@ export const skillGroups = [
       { name: "VS Code", icon: VscVscode },
       { name: "Figma", icon: FaFigma },
       { name: "Postman", icon: SiPostman },
+      { name: "Thunder Client", icon: FaBolt },
     ],
   },
 ];
@@ -111,23 +119,45 @@ export const projects = [
     tags: ["Full Stack", "Database", "Reports", "CRUD"],
     accent: "cyan",
   },
+
+  {
+  name: "Food Recipe Finder",
+  type: "Recipe Discovery App",
+  description:
+    "A recipe discovery application that allows users to search and explore recipes, view detailed cooking instructions, and discover meals through API integration and dynamic content.",
+  github: "https://github.com/ashrx19/FOOD-RECIPE-FINDER",
+  tags: ["React", "API Integration", "Search", "Responsive"],
+  accent: "amber",
+  },
+
   {
     name: "React Progress",
-    type: "Learning Repository",
+    type: "Frontend Learning Repository",
     description:
       "My React learning journey covering components, props, state management, hooks, routing, API integration, and project-based learning.",
     github: "https://github.com/ashrx19/REACT_PROGRESS",
     tags: ["React", "Hooks", "Routing", "APIs"],
     accent: "violet",
   },
+
   {
-    name: "Problem Solving",
-    type: "Algorithms Practice",
-    description:
-      "A repository where I regularly solve coding problems, practice algorithms, improve logic building, and consistently push solutions to GitHub.",
-    github: "https://github.com/ashrx19/PROBLEM-SOLVING-",
-    tags: ["DSA", "Logic", "Algorithms", "Practice"],
-    accent: "amber",
+  name: "Node.js Progress",
+  type: "Backend Learning Repository",
+  description:
+    "A repository documenting my Node.js learning journey through hands-on practice, covering core concepts, modules, asynchronous programming, HTTP servers, and backend development.",
+  github: "https://github.com/ashrx19/NODE-PROGRESS",
+  tags: ["Node.js", "Backend", "JavaScript", "Learning"],
+  accent: "sky",
+  },
+
+  {
+  name: "Express.js Progress",
+  type: "Backend Learning Repository",
+  description:
+    "A repository documenting my Express.js learning journey through practical implementations, covering routing, middleware, REST APIs, request handling, and backend development.",
+  github: "https://github.com/ashrx19/EXPRESS-",
+  tags: ["Express.js", "REST API", "Middleware", "Backend"],
+  accent: "rose",
   },
 ];
 

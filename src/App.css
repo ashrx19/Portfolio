@@ -623,6 +623,10 @@ pre {
     linear-gradient(160deg, #101d2c, #071018);
 }
 
+.accent-emerald .project-preview {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.22), transparent), linear-gradient(160deg, #10281f, #071018);
+}
+
 .accent-cyan .project-preview {
   background: linear-gradient(135deg, rgba(34, 211, 238, 0.2), transparent), linear-gradient(160deg, #102033, #071018);
 }
@@ -633,6 +637,14 @@ pre {
 
 .accent-amber .project-preview {
   background: linear-gradient(135deg, rgba(251, 191, 36, 0.2), transparent), linear-gradient(160deg, #211b12, #071018);
+}
+
+.accent-sky .project-preview {
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.22), transparent), linear-gradient(160deg, #122136, #071018);
+}
+
+.accent-rose .project-preview {
+  background: linear-gradient(135deg, rgba(251, 113, 133, 0.22), transparent), linear-gradient(160deg, #2a1520, #071018);
 }
 
 .preview-lines {

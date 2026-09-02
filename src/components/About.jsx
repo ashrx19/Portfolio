@@ -24,7 +24,7 @@ export default function About() {
             I am a Computer Science student and Full Stack Developer focused on building real-world applications using the MERN stack.
           </p>
           <p>
-            I continuously improve my skills through project development and problem solving. I am currently strengthening my MERN and backend development skills while building production-ready applications.
+            I continuously improve my skills through project development and problem solving. I am currently strengthening my MERN skills while building production-ready applications.
           </p>
         </motion.div>
 
